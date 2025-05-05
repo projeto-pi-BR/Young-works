@@ -1,0 +1,219 @@
+body{
+    background-image: url(/assets/img/background_projeto.jpeg);
+}
+
+/* Contêiner para logo e título */
+.header {
+    display: flex;
+    align-items: center;  /* Alinha o logo e o título verticalmente */
+    justify-content: flex-start;  /* Alinha eles à esquerda */
+    gap: 16px;  /* Espaço entre logo e título */
+    padding: 16px;
+    width: 100%;
+}
+
+.logo {
+    flex: 0 1 150px;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo responsiva */
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 60%;
+    width: 200px;
+}
+
+/* Título */
+.titulo {
+    background-color: rgba(0, 0, 0, 0);
+    /* Fundo totalmente transparente */
+    display: flex;
+    padding: 16px;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-heading);
+    color: var(--cor-primaria);
+}
+
+
+/* Barra de navegação */
+.container_navegador {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    /* Faz a navegação sair do fluxo normal do documento */
+    top: 0;
+    /* Coloca no topo da tela */
+    right: 0;
+    /* Coloca à direita da tela */
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+/* Navegação */
+.navegador {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    justify-content: space-evenly;
+}
+
+/* Lista de navegação */
+.navegador ul {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 16px;
+    gap: 40px;
+}
+
+/* Itens de navegação */
+.navegador li {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+/* Links da navegação */
+.navegador a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 4px;
+    /* Deixa o botão mais "clicável" visualmente */
+    padding: 0px 5px;
+}
+
+.navegador a:hover {
+    color: var(--cor-primaria);
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Efeito visual ao passar o mouse */
+}
+
+
+
+
+/* RESSET*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remover estilo de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remover listas de estilo */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remover estilo de tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Definir fontes padrão */
+body {
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
+}
+
+
+
+
+
+/*VAR*/
+/* Configuração da paleta de cores */
+:root {
+    --cor-primaria: #FFD700;
+    --cor-secundaria: #c9a800;
+    --cor-terciaria: #957b00;
+    --cor-quarta: #665100;
+    --cor-cinco: #422900;
+    --font-family: 'Arial', sans-serif;
+    --font-heading: 'Roboto', sans-serif;
+}
+
+
+/*media pc*/
+
+
+@media screen and (min-width: 1920px) {
+
+    /* Barra de navegação */
+    .container_navegador {
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 24px;
+        z-index: 10;
+    }
+}
+
+/* Navegação */
+.navegador {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navegador ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 16px;
+    gap: 48px;
+    /* Aumenta o espaçamento entre os itens */
+}
+
+.navegador li {
+    display: flex;
+    align-items: center;
+}
+
+.navegador a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    font-size: 1.6rem;
+    /* Aumentado o tamanho da fonte dos botões */
+    padding: 8px 16px;
+    /* Adicionado padding para área de clique maior */
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 4px;
+}
+
+.navegador a:hover {
+    color: var(--cor-primaria);
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Efeito visual ao passar o mouse */
+}

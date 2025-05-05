@@ -1,0 +1,187 @@
+@media screen and (min-width: 1920px) {
+    /* Container */
+    .container {
+        padding: 32px; /* Aumenta o espaçamento em telas maiores */
+    }
+
+    /* Título */
+    .container .titulo h1 {
+        font-size: 3.5rem; /* Título maior para resoluções maiores */
+    }
+
+    .descricao h2 {
+        font-size: 2.5rem;
+    }
+
+    .descricao p {
+        font-size: 1.4rem;
+        width: 70%; /* Ajuste de largura */
+    }
+
+    .botao a {
+        width: 240px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+    /* Barra de navegação */
+    .container_navegador {
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 24px;
+        z-index: 10;
+    }
+
+    /* Navegação */
+    .navegador {
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .navegador ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 16px;
+        gap: 48px; /* Aumenta o espaçamento entre os itens */
+    }
+
+    .navegador li {
+        display: flex;
+        align-items: center;
+    }
+
+    .navegador a {
+        text-decoration: none;
+        color: var(--cor-secundaria);
+        font-weight: bold;
+        font-size: 1.6rem; /* Aumentado o tamanho da fonte dos botões */
+        padding: 8px 16px; /* Adicionado padding para área de clique maior */
+        transition: color 0.3s ease, background 0.3s ease;
+        border-radius: 4px;
+    }
+
+    .navegador a:hover {
+        color: var(--cor-primaria);
+        background-color: rgba(255, 255, 255, 0.1); /* Efeito visual ao passar o mouse */
+    }
+
+    /* Título e descrição */
+    .descricao h2 {
+        font-size: xx-large;
+        font-family: var(--font-heading);
+        color: var(--cor-secundaria);
+        font-weight: bold;
+        padding: 20px;
+        word-spacing: 10px;
+    }
+
+    .descricao span {
+        color: var(--cor-terciaria);
+        font-weight: bold;
+    }
+
+    .descricao p {
+        font-family: var(--font-family);
+        color: var(--cor-terciaria);
+        font-size: x-large;
+        font-weight: bold;
+        padding: 20px;
+        word-spacing: 10px;
+    }
+
+    /* Funcionalidades - Cards */
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background-color: var(--cor-cinco);
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: var(--cor-primaria);
+    }
+
+    .card p {
+        font-size: 1.2rem;
+        color: var(--cor-secundaria);
+    }
+
+    /* Footer */
+    .disclaimer-premium {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to right, var(--bg-color));
+        padding: 20px 60px; /* Aumentando o padding */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .disclaimer-premium__title {
+        color: var(--cor-terciaria);
+        font-family: var(--font-family);
+        font-weight: bold;
+        font-size: 16px; /* Tamanho de fonte ajustado */
+    }
+
+    .disclaimer-premium__subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-family);
+        color: var(--cor-secundaria);
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .button {
+        background-color: var(--cor-primaria);
+        color: var(--cor-cinco);
+        font-size: 18px; /* Ajuste no tamanho da fonte */
+        font-weight: bold;
+        padding: 16px 36px; /* Tamanho do botão ajustado */
+        border: 0px;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-family: var(--font-family);
+    }
+
+    .button:hover {
+        transform: scale(1.1);
+    }
+}

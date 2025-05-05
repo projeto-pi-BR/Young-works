@@ -1,0 +1,10 @@
+/* Configuração da paleta de cores */
+:root {
+    --cor-primaria: #FFD700;
+    --cor-secundaria: #c9a800;
+    --cor-terciaria: #957b00;
+    --cor-quarta: #665100;
+    --cor-cinco: #422900;
+    --font-family: 'Arial', sans-serif;
+    --font-heading: 'Roboto', sans-serif;
+}
