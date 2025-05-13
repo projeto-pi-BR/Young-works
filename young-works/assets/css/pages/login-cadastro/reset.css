@@ -1,0 +1,76 @@
+/* Reset básico para garantir consistência entre navegadores */
+
+/* Remover margens e padding de todos os elementos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remover estilo de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remover listas de estilo */
+ul, ol {
+  list-style: none;
+}
+
+/* Remover estilo de tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Definir fontes padrão */
+body {
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Garantir que os botões não tenham bordas ou estilo específico */
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Definir tamanho padrão para imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Garantir que os elementos de formulário não tenham estilo extra */
+input,
+select,
+textarea {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+
+/* Remover fundo de campos de formulário */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/* Remover estilos de ícones de texto */
+abbr[title] {
+  text-decoration: underline dotted;
+}
