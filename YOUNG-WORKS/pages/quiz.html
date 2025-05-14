@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz: Qual Carreira de TI Você Deve Seguir?</title>
+  <link rel="stylesheet" href="/assets/css/pages/quiz.css">
+  <link rel="stylesheet" href="/assets/css/pages/quiz-resultado.css">
+  <link rel="stylesheet" href="/assets/css/queries/media_mobile.css">
+  <link rel="stylesheet" href="/assets/css/queries/media_pc.css">
+  <link rel="stylesheet" href="/assets/css/var/var.css">
+
+  <link rel="stylesheet" href="/components/navbar.css">
+
+</head>
+<body>
+  <!-- Navbar-->
+  <div id="navbar"></div>
+  <script src="/components/script-navbar.js"></script>
+
+  <!--Quiz-->
+  <main>
+    <br>
+    <br>
+    <div class="container">
+      <h1>Responda esse quiz</h1>
+      <br>
+      <h1>Qual Carreira de TI Você Mais Se Identifica?</h1>
+
+      <div id="quiz-container">
+        <div class="question" id="question-container">
+          <p id="question-text"></p>
+          <div id="options-container"></div>
+        </div>
+        <button id="next-button" onclick="nextQuestion()" style="display:none;">Próxima</button>
+      </div>
+
+      <!-- Resultado com estrutura HTML pré-definida -->
+      <div id="result-container" class="hidden">
+        <h2 id="result-title">Resultado</h2>
+        <p id="result-text"></p>
+        <a href="/pages/" id="informacoes-sobre-area">Informaçoes sobre a area</a>
+        <div id="course-container">
+          <h3 id="course-title">Curso Recomendado</h3>
+          <p id="course-name"></p>
+          <p id="course-platform"></p>
+          <p id="course-description"></p>
+          <br>
+          <br>
+          <a id="course-link" target="_blank">ACESSAR CURSO </a> <!-- Este é o lugar onde o link será exibido -->
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="/assets/js/pages/quiz.js"></script>
+</body>
+
+</html>

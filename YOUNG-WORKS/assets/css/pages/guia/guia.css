@@ -1,0 +1,119 @@
+/* Reset e base */
+/* Configuração da paleta de cores */
+:root {
+    --cor-primaria: #FFD700;
+    --cor-secundaria: #c9a800;
+    --font-family: 'Arial', sans-serif;
+    --font-heading: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  font-family: var(--font-heading);
+  background-image: url(/assets/img/background_projeto.jpeg);
+  padding: 10px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px; /* espaço entre os blocos */
+}
+
+
+/* Título principal */
+.container h1 {
+  font-size: 2.8rem;
+  font-family: var(--font-heading);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--cor-primaria);
+  margin-bottom: 40px;
+}
+
+/* Trilhas em grid responsivo */
+.trilhas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* Card da trilha */
+.trilha {
+  background-color: var(--cor-primaria);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.trilha:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Título da trilha */
+.trilha h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: rgb(0, 0, 0);
+}
+
+/* Descrição da trilha */
+.trilha p {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 16px;
+}
+
+/* Lista de links */
+.trilha ul {
+  padding-left: 0;
+}
+
+.trilha ul li {
+  margin-bottom: 10px;
+}
+
+.trilha a {
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  font-size: 20px;
+}
+
+.trilha a:hover {
+  border: 2px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .trilha h2 {
+    font-size: 1.5rem;
+  }
+
+  .trilha {
+    padding: 16px;
+  }
+}

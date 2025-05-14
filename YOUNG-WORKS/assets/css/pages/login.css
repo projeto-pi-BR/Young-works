@@ -1,0 +1,148 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+}
+
+body {
+    background-image: url('/assets/img/background_projeto.jpeg');
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+    font-size: 20px;
+    
+}
+
+.container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+
+.navegador a:hover {
+    color: var(--cor-primaria);
+    background-color: rgba(255, 255, 255, 0.1); /* Efeito visual ao passar o mouse */
+    padding: 5px;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bloco_login{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+    background-color: #212122;
+    border-radius: 8px;
+    background: radial-gradient(circle, #000, #212121); /* Gradiente radial */
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.bloco_login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.bloco_login form label{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.bloco_login h2{
+    color: var(--cor-primaria);
+    font-family: var(--font-heading);
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.bloco_login label{
+    color: var(--cor-primaria);
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+
+.bloco_login input{
+    color: var(--cor-primaria);
+    width: 350px;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: #212122;
+    background-color: var(--cor-quarta);
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--cor-secundaria); /* muda a cor da borda quando clicar no campo */
+    outline: none;
+    box-shadow: 0 0 5px var(--cor-secundaria);
+}
+
+::placeholder{
+    color: var(--cor-primaria);
+}
+
+.bloco_login span{
+    font-size: small;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--cor-secundaria);
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.button_login{
+    background-color: var(--cor-primaria);
+    color: var(--cor-cinco);
+    font-family: var(--font-family);
+    font-weight: bold;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.button_login:hover {
+    transform: scale(1.1);
+}
+
+.button_cadastro{
+    background-color: var(--cor-cinco);
+    color: var(--cor-secundaria);
+    font-family: var(--font-family);
+    font-weight: bold;
+    border-color: #000;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.button_cadastro:hover {
+    transform: scale(1.1);
+}
+

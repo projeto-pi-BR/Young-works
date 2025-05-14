@@ -1,0 +1,86 @@
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza horizontalmente */
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Logo maior e no topo */
+    .container .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0; /* Espaço entre logo e título */
+    }
+
+    .container .logo img {
+        max-height: 150px; /* Logo maior */
+        height: auto;
+        margin-top: 30%;
+    }
+
+    /* Título abaixo da logo, centralizado */
+    .container .titulo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 8px 0;
+        padding-top: 5%;
+        text-align: center;
+        font-size: 1.8rem; /* Tamanho do título */
+        font-weight: bold;
+    }
+
+    /* Barra de navegação abaixo da logo e título */
+    .container_navegador {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Centraliza a barra */
+        padding: 16px 0;
+        margin-top: 20px; /* Espaço entre título/logo e barra */
+    }
+
+    .navegador {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; /* Permite quebrar a linha */
+        justify-content: center; /* Centraliza os itens */
+    }
+
+    .navegador ul {
+        display: flex;
+        flex-wrap: wrap; /* Quebra os itens em várias linhas */
+        justify-content: center; /* Centraliza os itens */
+        gap: 16px; /* Espaçamento entre os itens */
+        padding: 0;
+        margin: 0;
+    }
+
+    .navegador li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .navegador a {
+        text-decoration: none;
+        color: var(--cor-secundaria);
+        font-weight: bold;
+        font-size: 1.2rem; /* Tamanho do texto nos itens */
+        padding: 8px 16px;
+        transition: color 0.3s ease;
+    }
+
+    .navegador a:hover {
+        color: var(--cor-primaria);
+    }
+}
+
+
+
+
+
+
