@@ -1,0 +1,179 @@
+/* Paleta de cores personalizada */
+:root {
+  --cor-primaria: #FFD700;
+  --cor-secundaria: #c9a800;
+  --cor-fundo: #1e1e1e;
+  --cor-texto: #ffffff;
+  --cor-botao-hover: #e6c200;
+  --cor-container: #2a2a2a;
+
+  --font-family: 'Arial', sans-serif;
+  --font-heading: 'Roboto', sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-image: url(/assets/img/background_projeto.jpeg);
+  color: var(--cor-texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: var(--cor-container);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* titulos */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  text-align: center;
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+/* textos */
+p {
+  font-size: 2.1rem;
+  line-height: 1.6;
+  font-family: var(--font-heading);
+}
+
+/*Area do quiz*/
+#quiz-container {
+  margin-top: 2rem;
+}
+
+/* botoes de opcao */
+.option{
+    background-color: var(--cor-primaria);
+    color: #000;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+.option:hover{
+    background-color: #000;
+    color: var(--cor-primaria);
+}
+.option.selected{
+    background-color: #000;
+    color: var(--cor-primaria);
+}
+
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#options-container button {
+  background-color: var(--cor-primaria);
+  color: #000;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#options-container button:hover {
+  background-color: var(--cor-botao-hover);
+}
+
+/* Botao de proxima pergunta */
+#next-button {
+  display: block;
+  margin: 2rem auto 0;
+  background-color: var(--cor-primaria);
+  color: #000;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#next-button:hover {
+  background-color: var(--cor-botao-hover);
+  color: #111;
+}
+
+/* Resultado */
+#result-container {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--cor-primaria);
+  background-color: #fb0303;
+}
+
+.hidden {
+  display: none;
+}
+
+#informacoes-sobre-area,
+#course-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--cor-primaria);
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#informacoes-sobre-area:hover,
+#course-link:hover {
+  background-color: var(--cor-botao-hover);
+}
+
+/* Curso recomendado */
+#course-container {
+  margin-top: 1.5rem;
+  background-color: #000000;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#course-title {
+  color: var(--cor-secundaria);
+  margin-bottom: 0.5rem;
+}
+
+#course-name {
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  #options-container button,
+  #next-button {
+    width: 100%;
+  }
+}
