@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Works</title>
+    <link rel="stylesheet" href="/assets/css/pages/login-cadastro/reset.css" />
+    <link rel="stylesheet" href="/assets/css/pages/login-cadastro/var.css" />
+    <link rel="icon" href="./img/logo.png" type="icon">
+    <link rel="stylesheet" href="/assets/css/pages/login.css" />
+    <link rel="stylesheet" href="/assets/css/pages/login-cadastro/medias/media.css">
+</head>
+
+<body>
+    <!--Elemento com a tela de Login-->
+    <main>
+        <div class="bloco_login">
+            <h2>Login</h2>
+            <form action="logarNaConta" method="post">
+                <label for="nome">E-mail: </label>
+                <input type="email" name="e-mail" maxlength="50" placeholder="Digite seu e-mail" required>
+                <label for="e-mail">Senha: </label>
+                <input type="password" name="senha" maxlength="12" placeholder="Digite sua senha"
+                    required>
+                <span>Esqueceu sua senha?</span>
+                <div class="button">
+                    <button class="button_login" type="submit"></a> Entrar</button>
+                    <button class="button_cadastro">Cadastrar</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            const emailInput = form.querySelector('input[type="email"]');
+            const passwordInput = form.querySelector('input[type="password"]');
+
+            form.addEventListener('submit', function (e) {
+                const email = emailInput.value.trim();
+                const password = passwordInput.value.trim();
+
+                if (email === 'youngworks@gmail.com' && password === '123456789') {
+                    // Login correto
+                    e.preventDefault(); // Impede envio do form se estiver usando redirecionamento manual
+                    window.location.href = '/pages/home.html'; // Substitua por sua página;
+                } else {
+                    // Bloqueia o envio
+                    e.preventDefault();
+                    alert('E-mail ou senha incorretos!');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
