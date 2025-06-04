@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column; 
+}
+
+
+
+
+/* area de cursos editado */
+
+.cursos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.area-curso {
+    width: 90%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.area-curso::-webkit-scrollbar {
+    display: none;
+}
+
+.area-curso ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.area-curso li {
+    flex: 0 0 auto;
+}
+
+.card-curso {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-curso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seta-esquerda,
+.seta-direita {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.seta-esquerda {
+    left: 10px;
+}
+
+.seta-direita {
+    right: 10px;
+}
+
+.h1-area-cursos {
+    color: #fff;
+    margin-left: 15vh;
+}
