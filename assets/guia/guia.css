@@ -1,0 +1,116 @@
+html{
+  scroll-behavior: smooth;
+}
+.h1, .container > p{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.h1{
+  margin-top: 90px;
+}
+.container > p{
+  margin: 50px 50px 50px 50px;
+  background-color: var(--cor-primaria);
+  color: #000;
+}
+.link-trilha{
+  font-size: 30px;
+  background-color: var(--cor-primaria);
+  color: #000;
+  border-radius: 50px;
+  padding: 30px;
+  margin: 740px;
+}
+.trilhas-container{
+  margin-top: 250px;
+}
+
+/* Estilização para cada bloco de trilha com <details> */
+details {
+  background-color: var(--cor-primaria);
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+details:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Cabeçalho do details (clicável) */
+details summary {
+  cursor: pointer;
+  padding: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: var(--cor-secundaria);
+  color: #000;
+  list-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+/* Ícone da seta padrão (expansão) */
+details summary::marker {
+  display: none; /* remove marcador nativo em navegadores que suportam */
+}
+
+details summary::after {
+  content: '▼';
+  position: absolute;
+  right: 20px;
+  font-size: 1.2rem;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+/* Gira o ícone ao abrir */
+details[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+/* Conteúdo dentro do details */
+details > div, P {
+  padding: 20px;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+/* Links */
+details ul {
+  text-decoration: dashed;
+
+}
+
+details li {
+  margin: 10px 0;
+}
+
+details a {
+  color: #000;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+details a:hover {
+  color: #333;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 600px) {
+  details summary {
+    font-size: 1.4rem;
+    padding: 16px;
+  }
+
+  details > div {
+    padding: 16px;
+  }
+}
